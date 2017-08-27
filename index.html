@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="dist/css/lightbox.min.css">
+<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+}
+#main #header {
+	width: 960px;
+	height: 320px;
+	
+	background-image: url(images/header.png);
+
+}
+#main #footer {
+	width: 960px;
+	height: 100px;
+	
+	background-image: url(images/footer.png);
+	
+}
+#main {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+body {
+	background-image: url(images/bg.png);
+	background-color: rgba(221,203,179,1.00);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+}
+#main #content {
+	width: 960px;
+	background-color: rgba(247,238,226,1.00);
+}
+#main #content #side {
+	width: 200px;
+	min-height: 800px;
+	float: left;
+	background-image: url(images/side.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main #content #main_cont {
+	width: 740px;
+	min-height: 800px;
+	float: right;
+	padding-left: 5px;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+#content #side #menu {
+	width: 180px;
+	min-height: 400px;
+	margin-top: 80px;
+	float: right;
+}
+#content #side #about {
+	width: 180px;
+	min-height: 300px;
+	float: right;
+}
+
+#menu ul li .m {
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid rgba(172,140,98,1.00);
+}
+#menu ul li .m a {
+	width: 180px;
+	height: 30px;
+	display: block;
+	color: rgba(103,78,45,1.00);
+	text-decoration: none;
+	text-align: left;
+	text-indent: 100px;
+}
+#menu ul li .sub li {
+	width: 180px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px dotted rgba(140,117,87,1.00);
+	background-color: rgba(222,214,203,1.00);
+}
+#menu ul li .sub li a {
+	width: 180px;
+	height: 20px;
+	display: block;
+	color: rgba(55,39,18,1.00);
+	text-decoration: none;
+	text-align: left;
+	text-indent: 10px;
+	line-height: 20px;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+#menu ul li {
+	position: relative;
+}
+#menu ul li .sub   {
+	position: absolute;
+	left: 180px;
+	top: 0px;
+	display:none;
+	z-index:100;
+}
+#menu ul li:hover .sub{
+	display:block;	
+}
+
+
+
+#menu ul li .sub li a:hover {
+	background-color: rgba(132,104,65,1);
+	color: rgba(236,236,236,1);
+	border-color: rgba(118,90,53,1);
+}
+#content #main_cont h1 {
+	color: rgba(98,82,60,1.00);
+	font-size: 30px;
+	font-family: "微軟正黑體";
+	font-weight: 800;
+	padding-left: 20px;
+	background-image: url(images/h1bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 18px;
+	padding-top: 5px;
+}
+#main_cont  p {
+	width: 700px;
+	color: rgba(66,30,19,1.00);
+	font-family: "微軟正黑體";
+	line-height: 20px;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 14px;
+	padding-top: 10px;
+}
+#main_cont  p img {
+	float: left;
+	padding: 5px;
+	background-image: url(images/imgbg2.png);
+	background-repeat: no-repeat;
+}
+#content #main_cont #photo {
+	width: 700px;
+	min-height: 300px;
+}
+#main_cont #photo fieldset {
+	min-height: 300px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	border: 1px solid rgba(118,55,36,1.00);
+}
+#photo fieldset legend {
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgba(132,50,51,1.00);
+	color: rgba(255,255,255,1.00);
+	border: 1px solid rgba(172,136,137,1.00);
+	-webkit-box-shadow: 1px 1px 2px rgba(100,74,48,1.00);
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba(100,74,48,1.00);
+	font-family: "微軟正黑體";
+}
+#photo fieldset .item {
+	width: 99px;
+	height: 100px;
+	float: left;
+	text-align: center;
+	padding-top: 0px;
+}
+#photo fieldset .item img {
+	padding: 4px;
+	background-color: rgba(243,243,243,1.00);
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,1.00);
+	box-shadow: 1px 1px 4px rgba(0,0,0,1.00);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#photo fieldset .item img:hover {
+	background-color: rgba(243,166,151,1);
+}
+</style>
+</head>
+
+<body>
+    <div id="main">
+      <div id="header"></div>
+      <div id="content" class="clearfix">
+        <div id="side">
+          <div id="menu">
+            <ul>
+              <li><div class="m"><a href="#">aaaaaaaa</a></div>
+                <ul class="sub">
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                </ul>
+              </li>
+              <li><div class="m"><a href="#">aaaaaaaa</a></div>
+                <ul class="sub">
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                </ul>
+              </li>
+              <li><div class="m"><a href="#">aaaaaaaa</a></div>
+                <ul class="sub">
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                </ul>
+              </li>
+              <li><div class="m"><a href="#">aaaaaaaa</a></div>
+                <ul class="sub">
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                  <li><a href="#">bbbbbbbb</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div id="about"> id "about" 的內容放在這裡</div>
+        </div>
+        <div id="main_cont">
+         
+            <h1>三峽老街的故事</h1>
+            <p><img src="images/1.jpg" alt="三峽文化協會-三角湧老街" width="200" height="120" title="三角湧老街&#10老街緣起"/>「三角湧」是三峽鎮的舊名。三百多年前，福建泉州安溪縣的先祖們來到此地開墾，他們在這塊土地上胼手胝足，辛勤墾拓，留下了許多古老的聚落及精緻華美的廟宇、碑碣史蹟等歷史活見證，更曾締造過樟腦、染布、茶葉、煤礦產量的世界紀錄，以及全省第一座農會設立、最宏偉的鎮公所、全台最長的輕便鐵道和聞名全台的三峽米粉等。而今三峽在山城河港的繁華褪盡後，所延續保有的純樸悠閒風貌和活生生的社區生態，仍是全台灣目前僅存最完整的珍貴市街聚落型態，其中蘊藏的許多豐富的傳說和傳統人文精神，都是值得這一代三峽人珍視並共同加以保護的。 三峽在近十年來台灣社會急速開發與社會功利現實下，隨著北二高通車，帶來了快速的改變和衝擊，新大樓如雨後春筍般矗立，舊日城鎮的獨特風貌和清淨的河川生態，即將消失殆盡，為了趕緊為子孫留下三峽的文化財，除了政府和學校應加強宣導和努力外，我們生活在此地民眾的共識建立與配合更是一股重要的力量。</p>
+          <h1>小鎮緣起</h1>
+            <p><img src="images/2.jpg" width="200" height="120" alt=""/>民國七十八年，一群三峽國小的主任及教師們在體認到鄉土文化的重要性後，組成了鄉土教材編輯小組，並配合三峽國小創校九十週年校慶，舉辦了一場盛大的「鄉土民俗文物展」，並同時著手準備編輯地方鄉土教材。期間曾成立了「峽源工作室」，繼續推動地方鄉土文化的研究與宣導。   隨後在八十三年十月二十五日由林炯任、王淑宜、何兆青、林月珠、江麗娜、王志鈞、藍毓秀、王昇文等八人發起組成了「三角湧文史工作室」，並敦聘廖富本先生、鄭有財先生、周阿金主任擔任顧問、劉還月先生指導。 隨即承辦台北縣立文化中心「社區義工人才培訓研習」。八十四年四月承辦台北縣全國文藝季「鳶山下的子民」系列活動及出版。十二月社區藝文展演活動－「百年風華三角湧」，並協辦三峽教會聖誕節活動。八十五年二月承辦鎮公所「廟會迎春三峽年」系列活動。七月承辦「三鶯地區第一屆社區工作人才培訓營」。八月協辦鎮公所「三峽中元祭」－宗教藝術生活大展活動。一連串文化活動及出版下來，著實地打響了三峽草根文化的特色，同時也累積了大量的田野調查史料及影像。     「三角湧」發展至今的局面，乃是緣於大家對土地與三峽文化的認同與興趣所凝聚而成，當然來自地方父老鄉親的鼓勵與打氣，更是支持我們繼續打拚的原動力。然而，二年來工作室夥伴在自掏腰包、出錢出力、無怨無悔的奮鬥中，隨著會務的擴展，人事的遞變，亟須走向專業化及制度化的方向發展，以期更有效結合社區民眾力量、擴大參與面。於是工作室議決發起成立協會，發起人廖富本先生等三十名，乃於民國八十五年八月十七日具文向台北縣政府社會局申請組織「台北縣三峽鎮三角湧文化協進會」，以研究保存三峽地區之文化資源，提昇本鎮文化、教育及環境生活品質為宗旨。經主管機關會審後，於八十五年九月卅日奉台北縣政府社會區八五北府社一字第三四一一一四號函核准籌組。同年十一月十七日假三峽國民小學召開成立大會，正式成立「三角湧文化協進會」。</p>
+            <p>&nbsp;</p>
+            <hr color="#5E1617" style="width:700px">
+            <p>&nbsp;</p>
+            <div id="photo">
+           	  <fieldset>
+                	<legend>三峽之美</legend>
+                <div class="item"><a href="images/big/JK001_72A.jpg" data-lightbox="example-set"><img src="images/small/JK001_72A.jpg" width="80" height="60" alt=""/></a> </div>
+                <div class="item"><a href="images/big/JK002_72A.jpg" data-lightbox="example-set"><img src="images/small/JK002_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK003_72A.jpg" data-lightbox="example-set"><img src="images/small/JK003_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK004_72A.jpg" data-lightbox="example-set"><img src="images/small/JK004_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK005_72A.jpg" data-lightbox="example-set"><img src="images/small/JK005_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK006_72A.jpg" data-lightbox="example-set"><img src="images/small/JK006_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK007_72A.jpg" data-lightbox="example-set"><img src="images/small/JK007_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK008_72A.jpg" data-lightbox="example-set"><img src="images/small/JK008_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK009_72A.jpg" data-lightbox="example-set"><img src="images/small/JK009_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK010_72A.jpg" data-lightbox="example-set"><img src="images/small/JK010_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK011_72A.jpg" data-lightbox="example-set"><img src="images/small/JK011_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK013_72A.jpg" data-lightbox="example-set"><img src="images/small/JK013_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK014_72A.jpg" data-lightbox="example-set"><img src="images/small/JK014_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK015_72A.jpg" data-lightbox="example-set"><img src="images/small/JK015_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK016_72A.jpg" data-lightbox="example-set"><img src="images/small/JK016_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK017_72A.jpg" data-lightbox="example-set"><img src="images/small/JK017_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK018_72A.jpg" data-lightbox="example-set"><img src="images/small/JK018_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK019_72A.jpg" data-lightbox="example-set"><img src="images/small/JK019_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK020_72A.jpg" data-lightbox="example-set"><img src="images/small/JK020_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK024_72A.jpg" data-lightbox="example-set"><img src="images/small/JK024_72A.jpg" width="80" height="60" alt=""/> </div>
+           	    <div class="item"><a href="images/big/JK025_72A.jpg" data-lightbox="example-set"><img src="images/small/JK025_72A.jpg" width="80" height="60" alt=""/> </div>
+
+                </fieldset>
+            </div>
+            <p>&nbsp;</p>
+            <p></p>
+            <p>&nbsp;</p>
+          
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+</body>
+</html>
